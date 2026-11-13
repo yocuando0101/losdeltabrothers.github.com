@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Los Deltabrothers</title>
+  <link rel="icon" href="../img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="../index.html"><img src="../img/logo_sin_nombre.png" alt="Los Deltabrothers" class="topbar__logo logoP"></a>
+  </div>
+
+  <nav class="nav" aria-label="Principal">
+    <a href="../index.html#juegos">Más juegos</a>
+    <a href="../index.html#nosotros">Nosotros</a>
+    <a href="contacto.html" aria-current="page">Contacto</a>
+    <a href="#" data-soon>Guía</a>
+    <a href="#" data-soon>Extra</a>
+  </nav>
+
+  <header class="banner">
+    <a href="../index.html"><img src="../img/logo_nombre.png" alt="Los Deltabrothers" class="banner__logo"></a>
+  </header>
+
+  <main class="contact">
+    <div class="contact__card">
+      <h1>Contacto</h1>
+      <p class="contact__intro">Escribinos y te respondemos lo antes posible.</p>
+
+      <form id="form-contacto" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required autocomplete="name" placeholder="Escribí tu nombre">
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required autocomplete="email" placeholder="Escribí tu email">
+        </div>
+
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" required autocomplete="tel" placeholder="Escribí tu teléfono">
+        </div>
+
+        <div class="field">
+          <label for="asunto">Asunto</label>
+          <input type="text" name="asunto" id="asunto" required placeholder="Escribí un asunto">
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" required placeholder="Dejá acá tu comentario…"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <ul class="footer__team">
+      <li>Lorenzo Banega</li>
+      <li>Ignacio Palmieri</li>
+      <li>Mateo Perez</li>
+      <li>Guillermo Velez</li>
+    </ul>
+    <ul class="footer__links">
+      <li><a href="../index.html#juegos">Más juegos</a></li>
+      <li><a href="../index.html#nosotros">Nosotros</a></li>
+      <li><a href="contacto.html">Contactanos</a></li>
+      <li><a href="#" data-soon>Guías</a></li>
+      <li><a href="#" data-soon>Extras</a></li>
+    </ul>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Próximamente</div>
+
+  <script src="contacto.js"></script>
+</body>
+</html>

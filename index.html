@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Los Deltabrothers</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+
+  <nav class="nav" aria-label="Principal">
+    <img src="./img/logo_sin_nombre.png" alt="Icono" class="img-nav">
+    <a href="#juegos" data-home>Más juegos</a>
+    <a href="#nosotros" data-home>Nosotros</a>
+    <a href="contactos/contacto.html">Contacto</a>
+    <a href="#" data-soon>Guía</a>
+    <a href="#" data-soon>Extra</a>
+  </nav>
+
+  <header class="banner" id="inicio">
+    <a href="#inicio" data-home><img src="img/logo_nombre.png" alt="Los Deltabrothers" class="banner__logo"></a>
+  </header>
+
+  <main>
+    <div id="view-home">
+      <section class="games" id="juegos" aria-label="Nuestros juegos">
+        <button class="cover" data-game="jhon"><img src="img/john_aventure.png" alt="Jhon Aventuras"></button>
+        <button class="cover" data-game="critical"><img src="img/critical_kill.png" alt="Critical Kill"></button>
+        <button class="cover" data-game="cana"><img src="img/cana_pesca.png" alt="Caña Pesca"></button>
+      </section>
+
+      <div class="light" id="nosotros">
+        <div class="wrap">
+          <section class="block">
+            <h2>Quiénes somos</h2>
+            <p>Somos una empresa de videojuegos indie con el objetivo de hacer llegar un mensaje a nuestra audiencia, por medio de nuestro contenido audiovisual interactivo y didáctico.</p>
+            <p>Nuestros productos están dirigidos a un público general, para todas las edades. A pesar de que no sean muy complejos de jugar, abarcan temáticas serias las cuales vale la pena explorar y reflexionar.</p>
+          </section>
+
+          <section class="block">
+            <h2>Nuestra misión</h2>
+            <p>Como Los Deltabrothers, queremos transmitir mensajes que consideramos valiosos y que deben ser recordados, asegurarnos de que la mayoría los reciba y generar un impacto positivo en el mundo.</p>
+          </section>
+
+          <section class="block">
+            <h2>Nuestra visión</h2>
+            <p>Queremos empezar nuestra misión con la institución Ana María Janer para luego ir al resto del mundo.</p>
+          </section>
+
+          <section class="block">
+            <h2>Nuestros miembros</h2>
+            <p>A continuación, daremos una breve presentación de los miembros del equipo.</p>
+            <div class="members">
+              <article class="member">
+                <div class="member__photo" role="img" aria-label="Foto pendiente"></div>
+                <div>
+                  <h3>Lorenzo Banega</h3>
+                  <p class="member__role">Diseño UI/UX</p>
+                  <p class="member__quote">“Yo cuando yo”</p>
+                </div>
+              </article>
+              <article class="member">
+                <div class="member__photo" role="img" aria-label="Foto pendiente"></div>
+                <div>
+                  <h3>Ignacio Palmieri</h3>
+                  <p class="member__role">Analista</p>
+                  <p class="member__quote">“Yo cuando yo”</p>
+                </div>
+              </article>
+              <article class="member">
+                <div class="member__photo" role="img" aria-label="Foto pendiente"></div>
+                <div>
+                  <h3>Mateo Perez</h3>
+                  <p class="member__role">Rol por definir</p>
+                  <p class="member__quote">“Yo cuando yo”</p>
+                </div>
+              </article>
+              <article class="member">
+                <div class="member__photo" role="img" aria-label="Foto pendiente"></div>
+                <div>
+                  <h3>Guillermo Velez</h3>
+                  <p class="member__role">Rol por definir</p>
+                  <p class="member__quote">“Yo cuando yo”</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="view-game" class="game-page" hidden>
+      <h1 id="game-title"></h1>
+
+      <div class="screen" aria-label="Vista previa del juego">
+        <iframe class="gameiframe" src="critical_kill\CriticalKill_v.0.9.html" title="description"></iframe>
+      </div>
+
+      <section class="split">
+        <img id="game-cover-a" class="split__cover" alt="">
+        <div>
+          <h2 id="game-what"></h2>
+          <p id="game-desc"></p>
+        </div>
+      </section>
+
+      <section class="split split--reverse">
+        <div>
+          <h2>¿Querés unos extras?</h2>
+          <p><a href="#" data-soon>Cliqueá acá</a> para ver extras y descargables relacionados a este juego.</p>
+        </div>
+        <img id="game-cover-b" class="split__cover" alt="">
+      </section>
+
+      <p class="back"><a href="#juegos" data-home>← Volver a todos los juegos</a></p>
+    </div>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <ul class="footer__team">
+      <li>Lorenzo Banega</li>
+      <li>Ignacio Palmieri</li>
+      <li>Mateo Perez</li>
+      <li>Guillermo Velez</li>
+    </ul>
+    <ul class="footer__links">
+      <li><a href="#juegos" data-home>Más juegos</a></li>
+      <li><a href="#nosotros" data-home>Nosotros</a></li>
+      <li><a href="contactos/contacto.html">Contactanos</a></li>
+      <li><a href="#" data-soon>Guías</a></li>
+      <li><a href="#" data-soon>Extras</a></li>
+    </ul>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Próximamente</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
